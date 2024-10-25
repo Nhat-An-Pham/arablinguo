@@ -21,7 +21,7 @@ const AudioPlayer = ({ audioSrc }) => {
             }
             setIsPlaying(!isPlaying);
         } else {
-            toast.error("This Reading doesn't have audio")
+            toast.error("本文没有语音");
         }
     };
 

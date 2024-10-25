@@ -30,6 +30,7 @@ function Layout() {
             <Route path="*" exact element={<HomePage />} />
             <Route path="/login" exact element={<LoginPage />} />
             <Route path="/register" exact element={<RegisterPage />} />
+            {/* <Route path="/loading" exact element={<LoadingPage />} /> */}
             <Route path="/translator" exact element={<TranslatePage />} />
             <Route path="/forum" exact element={<ForumPage />} />
             <Route path="/test" exact element={<TestPage />} />

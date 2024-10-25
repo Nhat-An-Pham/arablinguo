@@ -1,0 +1,113 @@
+.page-test {
+    background-color: var(--lightgrey-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 90px;
+    height: auto;
+}
+
+.test_section {
+    &-left {
+        width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0px 40px;
+    }
+
+    &-right {
+        width: 500px;
+        border-radius: 13px;
+        background-color: white;
+        font-size: 30px;
+        padding: 20px;
+
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+.test_section_left-card {
+    width: 40%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 13px;
+    cursor: pointer;
+
+    & img {
+        width: 100%;
+    }
+
+    & .test_section_left_card-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.test_section_left-card:hover {
+    transform: scale(1.03);
+    border: 0.2px var(--grey-color) solid;
+    transition: all 0.5ms;
+}
+
+.testPage-tab {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .tab-container {
+        width: 40%;
+        height: 75vh;
+        background-color: var(--lightgrey-color);
+        border-radius: 13px;
+        overflow: hidden;
+
+        & #tab-closeIcon{
+            border-radius: 13px;
+            cursor: pointer;
+        }
+
+        & #tab-closeIcon:hover{
+            color: var(--lightgrey-color);
+            background-color: var(--grey-color);
+            transition: all 0.5ms;
+        }
+
+        & #tab-subHeader{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        & #tab-listItem{
+            cursor: pointer;
+        }
+        & #tab-listItem:hover{
+            color: var(--lightgrey-color);
+            background-color: var(--grey-color);
+            transition: all 0.5ms;
+        }
+    }
+
+    & .tab-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--base-color);
+        opacity: 0.9;
+    }
+
+}

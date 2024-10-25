@@ -1,0 +1,23 @@
+.page-testDetailPage {
+    background-color: var(--lightgrey-color);
+    flex-direction: column;
+
+    & .testDetailPage-link {
+        width: 80%;
+        padding: 10px 0px;
+        color: var(--grey-color);
+        & #return {
+            border-bottom: 0.5px var(--grey-color) solid;
+            width: 300px;
+            padding: 5px 0px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        & #return:hover{
+            color: var(--base-color);
+            transition: all 0.5s;
+        }
+    }
+
+}

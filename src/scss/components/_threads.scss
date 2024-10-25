@@ -1,0 +1,62 @@
+.threads-container {
+    width: 100%;
+    margin-top: 20px;
+
+
+    & .threads-change{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & button{
+            margin: 0px 20px;
+            padding: 10px 15px;
+            border: none;
+            background-color: white;
+            border-radius: 13px;
+        }
+    }
+}
+
+.thread-card {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 13px;
+    border-radius: 13px;
+}
+
+.thread_card_section {
+    display: flex;
+    width: 100%;
+
+    &-head {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        & img {
+            width: 5%;
+            border-radius: 50%;
+            border: 0.2px var(--grey-color) solid;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+        & h3{
+            margin-right: 10px;
+        }
+    }
+
+    &-body {}
+
+    &-footer {
+        margin-top: 20px;
+        & #icon-container {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+
+            & #icon{
+                margin-right: 5px;
+            }
+        }
+    }
+}
+

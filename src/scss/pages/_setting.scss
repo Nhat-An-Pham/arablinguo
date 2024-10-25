@@ -1,0 +1,114 @@
+.page-setting {
+    justify-content: space-around;
+    background-color: var(--grey-color);
+}
+
+.setting_section {
+    height: 75%;
+    border-radius: 15px;
+    background-color: var(--lightgrey-color);
+
+    &-profile {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & img {
+            width: 80%;
+            border-radius: 50%;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border: 0.3px var(--grey-color) solid;
+        }
+
+        & #logout-button {
+            display: flex;
+            align-items: center;
+            padding: 5px 12px;
+            margin-top: 25px;
+        }
+    }
+
+    &-right {
+        width: 70%;
+    }
+}
+
+.setting_section_profile-content {
+    width: 90%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.setting_section_right-top {
+    display: flex;
+    width: 100%;
+    padding: 10px 12px;
+
+    & p {
+        padding: 10px 20px;
+        border-right: 0.2px var (--grey-color) solid;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+
+    & p:hover {
+        transform: scale(1.02);
+    }
+
+    & #chose {
+        background-color: var(--grey-color);
+        color: var(--lightgrey-color);
+    }
+}
+
+.setting_section_right-mid {
+    height: auto;
+    margin-top: 15px;
+    padding: 10px;
+    display: flex;
+}
+
+.setting_section_right_mid-container {
+    flex: 1;
+}
+
+.setting_section_right_mid_input {
+    padding: 5px;
+    & p{
+        margin: 10px 0px;
+    }
+    & input{
+        padding: 10px;
+        width: 60%;
+    }
+    & button{
+        padding: 10px 20px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    & #edit{
+        background-color: var(--grey-color);
+        border: none;
+        border-radius: 5px;
+        color: var(--lightgrey-color);
+    }
+    & #save{
+        background-color: green;
+        border: none;
+        border-radius: 5px;
+        color: var(--lightgrey-color);
+    }
+    & #cancel{
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        color: var(--lightgrey-color);
+    }
+    &-button{
+        margin-top: 40px;
+    }
+}

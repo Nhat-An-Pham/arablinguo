@@ -1,0 +1,82 @@
+.authpage-container {
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightgrey-color);
+}
+
+.authpage-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    filter: brightness(50%);
+    z-index: 0;
+}
+
+//login
+.login-container {
+    z-index: 2;
+    background-color: white;
+    border-radius: 15px;
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .login-section {
+        width: 60%;
+        margin: 0px;
+        margin-bottom: 20px;
+        position: relative;
+
+        &-title {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        &-email {
+            margin-bottom: 10px;
+        }
+        &-password{
+            margin-bottom: 10px;
+        }
+
+        &-button {
+            margin-top: 20px;
+            width: auto;
+            padding: 15px 30px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background-color: var(--grey-color);
+            color: white;
+
+            &:hover {
+                background-color: var(--lightgrey-color);
+                color: black;
+                transition: all 0.3s;
+
+            }
+        }
+        &-link{
+            p{
+                text-align: center;
+            }
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+                &:hover{
+                    color: var(--lightgrey-color);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(34, 34, 34);
+    z-index: var(--z-fixed);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: var(--header-height);
+    padding: 0px 20px;
+}
+
+.nav__logo {
+    color: var(--text-color-white);
+    transition: color 0.4s;
+    font-size: var(--h2-font-size);
+    font-family: var(--second-font);
+}
+
+.nav__toggle,
+.nav__close {
+    font-size: 1.5rem;
+    color: var(--text-color-white);
+    cursor: pointer;
+}
+
+.nav__link {
+    color: var(--text-color-white);
+    font-weight: var(--font-semi-bold);
+    transition: color 0.4s;
+}
+
+.nav__link-logo {
+    & img {
+        width: 20px;
+    }
+}
+
+.nav__cta-logo {
+    background-color: white;
+    color: var(--text-color-white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__link:hover {
+    // color: var(--halfgrey-color);
+    border-bottom: var(--lightgrey-color) 1px solid;
+}
+
+.nav__cta {
+    background-color: var(--grey-color);
+    color: var(--text-color-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0.75rem 1.5rem;
+}
+
+.nav__item{
+    display: flex;
+    align-items: center;
+}
+
+.nav__cta:hover {
+    border: none;
+    background-color: var(--lightgrey-color);
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2.5rem;
+}
+
+
+.nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+.show-menu {
+    right: 0;
+}
+
+.navbaractive {
+    transition: background-color 0.3s;
+    background-color: rgb(34, 34, 34);
+
+    ul.sub-navbars li {
+        background-color: rgb(34, 34, 34);
+        ;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: hsla(0, 0%, 6%, 0.2);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        width: 80%;
+        height: 100%;
+        padding: 6rem 3rem 0;
+        transition: right 0.4s;
+    }
+
+    .header {
+        background-color: var(--base-color);
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .nav {
+        height: calc(var(--header-height) + 1rem);
+    }
+
+    .nav__toggle,
+    .nav__close {
+        display: none;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        column-gap: 2.5rem;
+    }
+}

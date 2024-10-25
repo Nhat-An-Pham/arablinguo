@@ -1,0 +1,42 @@
+.slider-container {
+    position: relative;
+    background-color: var(--halfgrey-color);
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+
+
+    .slider-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        min-width: 100%;
+        transition: opacity 0.5s ease;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .arrows {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+
+    .arrow {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+}

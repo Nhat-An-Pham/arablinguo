@@ -1,0 +1,19 @@
+@import "./base";
+// @import "./variables";
+
+@import "./components/navbar";
+@import "./components/footer";
+@import "./components/translator";
+@import "./components/carousel";
+@import "./components/grammarTestComp";
+@import "./components/threads";
+@import "./components/audioplayer";
+
+@import "./pages/home";
+@import "./pages/login";
+@import "./pages/test";
+@import "./pages/reading";
+@import "./pages/setting";
+@import "./pages/translate";
+@import "./pages/forum";
+@import "./pages/testDetail";

@@ -1,0 +1,94 @@
+.gTest-container {
+    width: 80%;
+    height: 600px;
+    background-color: white;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.gTest {
+    &-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &-question {
+        height: 20%;
+        width: 100%;
+        padding: 20px;
+        background-color: var(--grey-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--lightgrey-color);
+
+        & p {
+            margin-top: 10px;
+        }
+    }
+
+    &-answers {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & button {
+            margin: 15px 0px;
+            padding: 18px 100px;
+            cursor: pointer;
+            background-color: var(--grey-color);
+            border-radius: 13px;
+            border: none;
+            color: var(--lightgrey-color);
+            font-size: 20px;
+        }
+
+        & button:hover {
+            color: var(--grey-color);
+            background-color: var(--lightgrey-color);
+            transition: all 0.3s;
+        }
+    }
+
+    &-middle{
+        height: 70%;
+        padding: 10px;
+        overflow: scroll;
+        & h3{
+            margin-bottom: 10px;
+        }
+        & ul{
+            background-color: var(--lightgrey-color);
+            padding: 15px;
+            border-radius: 13px;
+            & #question{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &-button{
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & button{
+            padding: 10px 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: green;
+            color: var(--lightgrey-color);
+            cursor: pointer;
+        }
+        & button:hover{
+            transform: scale(1.02);
+            background-color: lightgreen;
+            color: var(--grey-color);
+            transition: all 0.5s;
+        }
+    }
+}

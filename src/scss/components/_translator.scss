@@ -1,0 +1,88 @@
+.translator-container{
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.translator-row{
+    display: flex;
+    flex-wrap: wrap;
+    &-1{
+        width: 600px;
+        height: auto;
+        justify-content: space-between;
+        & svg{
+            height: 40px;
+            padding: 10px 14px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        & select{
+            border-radius: 6px;
+            border: none;
+            background-color: white;
+            font-family: var(--font-body);
+            padding: 0px 10px;
+        }
+    }
+    &-2{
+        margin-top: 30px;
+        width: 1200px;
+        height: auto;
+        justify-content: space-between;
+        position: relative;
+        flex-wrap: wrap;
+        & .inputText{
+            flex:1;
+            padding: 20px;
+            & input{
+                font-family: var(--body-font);
+            }
+            
+        }
+        & .outputText{
+            flex:1;
+            padding: 20px;
+            font-family: var(--body-font);
+        }
+    }
+
+    &-3{
+        padding: 20px 0px ;
+        & .btn{
+            padding: 12px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .translator-container{
+        height: auto;
+        width: 100vw;
+        margin-top: 20px;
+    }
+    .translator-row-1{
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        margin: 0px;
+        & select{
+            margin: 10px 0px;
+            padding: 10px 20px;
+        }
+    }
+    .translator-row-2{
+        flex-direction: column;
+        width: 90%;
+        margin: 0px;
+        & .inputText, .outputText{
+            width: 100%;
+        }
+    }
+}

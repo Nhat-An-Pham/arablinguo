@@ -1,0 +1,111 @@
+.page-reading {
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: auto;
+    background-color: var(--lightgrey-color);
+}
+
+.reading_section {
+    flex: 1;
+    height: 90vh;
+    padding: 10px 20px;
+    // border-radius: 15px;
+    &-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 80vh;
+
+        & #outlined-search{
+            width: 100%;
+            padding: 15px 15px;
+            border-radius: 13px;
+        }
+    }
+
+    &-text{
+        padding-bottom: 40px;
+    }
+}
+
+.reading_card {
+    &-cards {
+        height: 80%;
+    }
+
+    &-buttons {
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        & button {
+            padding: 10px 15px;
+            font-size: 15px;
+            margin: 0px 10px;
+            border: none;
+            border-radius: 15px;
+            background-color: white;
+            cursor: pointer;
+        }
+        & p{
+        }
+    }
+}
+
+//inside card
+.reading_card-container {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 5px 10px;
+    background-color: white;
+    & .reading_card-left{
+        width: 90%;
+        & p{
+            margin-top: 10px;
+            height: 40px;
+            overflow: hidden;
+        }
+        & .reading_card-play{
+            
+        }
+    }
+    & .reading_card-right{
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+//text
+.reading_text{
+    &-header{
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & h3{
+            background-color: white;
+            padding: 10px 15px;
+            border-radius: 13px;
+        }
+    }
+    &-text{
+        height: 80%;
+        padding: 20px;
+        background-color: white;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

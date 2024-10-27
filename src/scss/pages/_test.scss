@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     padding-top: 90px;
     height: auto;
+    padding-bottom: 50px;
 }
 
 .test_section {
@@ -71,29 +72,30 @@
         height: 75vh;
         background-color: var(--lightgrey-color);
         border-radius: 13px;
-        overflow: hidden;
+        overflow: scroll;
 
-        & #tab-closeIcon{
+        & #tab-closeIcon {
             border-radius: 13px;
             cursor: pointer;
         }
 
-        & #tab-closeIcon:hover{
+        & #tab-closeIcon:hover {
             color: var(--lightgrey-color);
             background-color: var(--grey-color);
             transition: all 0.5ms;
         }
 
-        & #tab-subHeader{
+        & #tab-subHeader {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        & #tab-listItem{
+        & #tab-listItem {
             cursor: pointer;
         }
-        & #tab-listItem:hover{
+
+        & #tab-listItem:hover {
             color: var(--lightgrey-color);
             background-color: var(--grey-color);
             transition: all 0.5ms;
@@ -109,5 +111,19 @@
         background-color: var(--base-color);
         opacity: 0.9;
     }
+
+}
+
+@media screen and (max-width: 1150px) {
+    .test_section-left {
+        justify-content: center
+    }
+
+    .testPage-tab {
+        .tab-container {
+            width: 90%;
+        }
+    }
+
 
 }

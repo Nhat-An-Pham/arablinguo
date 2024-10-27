@@ -18,6 +18,7 @@ const TestDetailPage = () => {
         mainFunction();
     }, []);
 
+
     const mainFunction = () => {
         const level = grammartests.find((item) => categoryName === item.categoryName);
         const test = level?.tests.find((item) => testId === item.testId);

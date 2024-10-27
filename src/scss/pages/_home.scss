@@ -244,3 +244,19 @@
         }
     }
 }
+
+@media screen and (max-width: 1150px) {
+    .home_section-middle{
+        flex-direction: column;
+        align-items: center;
+        .home_section_middle{
+            width: 90%;
+        }
+    }
+    .home_section-cate{
+        justify-content: center;
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}

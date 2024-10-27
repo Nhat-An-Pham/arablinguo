@@ -206,3 +206,22 @@
         }
     }
 }
+
+
+@media screen and (max-width: 1150px) {
+    .forum_section-main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .forum_section_main_panel{
+        width: 80%;
+        & .forum_main_left-categories{
+            display: none;
+        }
+
+        &-middle{
+            margin-bottom: 30px;
+        }
+    }
+
+}

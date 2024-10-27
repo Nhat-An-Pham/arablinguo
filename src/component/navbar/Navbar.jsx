@@ -9,8 +9,8 @@ const Navbar = () => {
     const [navbar, setNavbar] = useState(true);
     const [showMenu, setShowMenu] = useState(false);
 
-    const toggleMenu = () => {
-        setShowMenu(showMenu);
+    const toggleMenu = (value) => {
+        setShowMenu(value);
     };
 
     const closeMenuOnMobile = () => {
@@ -52,6 +52,7 @@ const Navbar = () => {
 
     useEffect(() => {
         checkLogin();
+        setShowMenu(false);
     }, [location]);
 
     return (
@@ -62,8 +63,8 @@ const Navbar = () => {
                 </NavLink>
 
                 <div
-                    className={`nav__menu ${showMenu ? "show-menu" : ""}`}
-                    id="nav-menu"
+                    className={`nav__menu 
+                        ${showMenu === true ? "show-menu" : ""}`}
                 >
                     <ul className="nav__list">
                         <li className="nav__item">
@@ -106,12 +107,12 @@ const Navbar = () => {
                         </li> */}
                         {checkLogin()}
                     </ul>
-                    <div className="nav__close" id="nav-close" onClick={toggleMenu}>
+                    <div className="nav__close" id="nav-close" onClick={() =>toggleMenu(false)}>
                         <IoClose />
                     </div>
                 </div>
 
-                <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
+                <div className="nav__toggle" id="nav-toggle" onClick={() =>toggleMenu(true)}>
                     <IoMenu />
                 </div>
             </nav>

@@ -28,6 +28,7 @@ const ReadingPage = () => {
     const handleNext = () => {
         if (currentPage < totalPages) {
             setCurrentPage(currentPage + 1);
+            
         }
     };
 

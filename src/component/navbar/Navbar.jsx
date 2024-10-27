@@ -84,7 +84,7 @@ const Navbar = () => {
                         </li>
                         <li className="nav__item">
                             <NavLink to="/test" className="nav__link" onClick={closeMenuOnMobile}>
-                                考试
+                                测试
                             </NavLink>
                         </li>
                         <li className="nav__item">
@@ -93,7 +93,7 @@ const Navbar = () => {
                                 className="nav__link"
                                 onClick={closeMenuOnMobile}
                             >
-                                阅读
+                                课文点读
                             </NavLink>
                         </li>
                         {/* <li className="nav__item">

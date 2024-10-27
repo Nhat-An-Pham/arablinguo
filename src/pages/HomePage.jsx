@@ -30,7 +30,7 @@ const HomePage = () => {
     return (
         <div className='page page-home'>
             <div className='home_section home_section-search'>
-                <input placeholder='抬头...'></input>
+                <input placeholder='麦加清真寺。。。'></input>
                 <SearchIcon />
             </div>
             <div className='home_section home_section-cate'>

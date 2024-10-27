@@ -22,6 +22,14 @@ const account = [{
     role: "user",
     avatar: require("./avatar.jpeg")
 },
+{
+    userName: "asia",
+    email: "asia1234567@gmail.com",
+    phoneNumb: "123456789",
+    password: "123",
+    role: "user",
+    avatar: require("./avatar.jpeg")
+}
 ]
 
 export default account;

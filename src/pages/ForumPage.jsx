@@ -32,7 +32,7 @@ const ForumPage = () => {
                 <div className="forum_section_main_panel forum_section_main_panel-left">
                     <input placeholder='search...'></input>
                     <div className='forum_main_left-categories'>
-                        <h5>类别</h5>
+                        <h5>话题</h5>
                         {categories.map((category) => (
                             <div className='main_left_categories-card'>
                                 <img alt='' src={category.logo}></img>

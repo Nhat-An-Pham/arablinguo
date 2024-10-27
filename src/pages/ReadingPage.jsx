@@ -42,7 +42,7 @@ const ReadingPage = () => {
     return (
         <div className='page page-reading'>
             <div className='reading_section reading_section-cards'>
-                <input id="outlined-search" placeholder='抬头...' type="search" style={{ backgroundColor: "white", border: "none" }} />
+                <input id="outlined-search" placeholder='第四册第一课。。。' type="search" style={{ backgroundColor: "white", border: "none" }} />
                 <div className='reading_card-cards'>
                     {currentItems.map((reading, index) => (
                         <div className='reading_card-container' key={index}>

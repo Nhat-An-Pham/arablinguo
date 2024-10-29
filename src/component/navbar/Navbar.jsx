@@ -59,7 +59,7 @@ const Navbar = () => {
         <header className={navbar ? "header navbaractive" : "header"}>
             <nav className={navbar ? "nav container navbaractive" : "nav container"}>
                 <NavLink to="/" className="nav__logo">
-                    arablinguo
+                    伊本语法
                 </NavLink>
 
                 <div
@@ -69,7 +69,7 @@ const Navbar = () => {
                     <ul className="nav__list">
                         <li className="nav__item">
                             <NavLink to="/" className="nav__link" onClick={closeMenuOnMobile}>
-                                词典
+                                主页
                             </NavLink>
                         </li>
                         <li className="nav__item">
@@ -107,12 +107,12 @@ const Navbar = () => {
                         </li> */}
                         {checkLogin()}
                     </ul>
-                    <div className="nav__close" id="nav-close" onClick={() =>toggleMenu(false)}>
+                    <div className="nav__close" id="nav-close" onClick={() => toggleMenu(false)}>
                         <IoClose />
                     </div>
                 </div>
 
-                <div className="nav__toggle" id="nav-toggle" onClick={() =>toggleMenu(true)}>
+                <div className="nav__toggle" id="nav-toggle" onClick={() => toggleMenu(true)}>
                     <IoMenu />
                 </div>
             </nav>

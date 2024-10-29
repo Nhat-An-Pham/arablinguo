@@ -43,7 +43,8 @@ const LoadThreads = () => {
                             <h5>{thread.title}</h5>
                         </div>
                         <div className='thread_card_section thread_card_section-body'>
-                            <p>{thread.description}</   p>
+                            <p>{thread.description}</p>
+                            <img src={thread.img} alt=''></img>
                         </div>
                         <div className='thread_card_section thread_card_section-footer'>
                             <div id='icon-container'>

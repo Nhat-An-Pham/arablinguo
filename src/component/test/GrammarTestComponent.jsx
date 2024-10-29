@@ -43,7 +43,7 @@ const GrammarTestComponent = ({ questions }) => {
                         <ul>
                             {incorrectAnswers.map((item, index) => (
                                 <li key={index}  >
-                                    <strong id='question'>Question:</strong> {item.question} <br />
+                                    <strong id='question'>Question {index + 1}:</strong> {item.question} <br />
                                     <strong>Your answer:</strong> {item.chosen} <br />
                                     <strong>Correct answer:</strong> {item.correct}
                                 </li>

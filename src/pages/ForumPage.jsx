@@ -13,12 +13,12 @@ const ForumPage = () => {
     const ratings = ["每周", "每月", "每年"];
 
     const categories = [
-        { title: "household", logo: require("../assets/icons/home.png") },
-        { title: "translator", logo: "" },
-        { title: "environment", logo: "" },
-        { title: "lifestyle", logo: "" },
-        { title: "Medical", logo: "" },
-        { title: "Work", logo: "" },
+        { title: "家庭", logo: require("../assets/icons/home.png") },
+        { title: "翻译", logo: require("../assets/icons/languages.png")},
+        { title: "环境", logo: require("../assets/icons/environment.png") },
+        { title: "生活方式", logo: require("../assets/icons/lifestyles.png") },
+        { title: "医疗", logo: require("../assets/icons/medical.png") },
+        { title: "工作", logo: require("../assets/icons/work.png")  },
     ]
 
     const handleChooseRating = (value) => {

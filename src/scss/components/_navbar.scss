@@ -18,9 +18,8 @@
 
 .nav__logo {
     color: var(--text-color-white);
-    transition: color 0.4s;
     font-size: var(--h2-font-size);
-    font-family: var(--second-font);
+    font-family: var(--chinese-font);
 }
 
 .nav__toggle,
@@ -45,6 +44,7 @@
 .nav__cta-logo {
     background-color: white;
     color: var(--text-color-white);
+    font-family: var(--chinese-font);
     border: none;
     border-radius: 50%;
     cursor: pointer;

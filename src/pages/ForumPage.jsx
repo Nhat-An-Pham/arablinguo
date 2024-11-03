@@ -14,11 +14,11 @@ const ForumPage = () => {
 
     const categories = [
         { title: "家庭", logo: require("../assets/icons/home.png") },
-        { title: "翻译", logo: require("../assets/icons/languages.png")},
+        { title: "翻译", logo: require("../assets/icons/languages.png") },
         { title: "环境", logo: require("../assets/icons/environment.png") },
         { title: "生活方式", logo: require("../assets/icons/lifestyles.png") },
         { title: "医疗", logo: require("../assets/icons/medical.png") },
-        { title: "工作", logo: require("../assets/icons/work.png")  },
+        { title: "工作", logo: require("../assets/icons/work.png") },
     ]
 
     const handleChooseRating = (value) => {
@@ -29,7 +29,7 @@ const ForumPage = () => {
     return (
         <div className='page page-forum'>
             <div className='forum_section forum_section-main'>
-                <div className="forum_section_main_panel forum_section_main_panel-left">
+                {/* <div className="forum_section_main_panel forum_section_main_panel-left">
                     <input placeholder='search...'></input>
                     <div className='forum_main_left-categories'>
                         <h5>话题</h5>
@@ -40,10 +40,10 @@ const ForumPage = () => {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
                 <div className='forum_section_main_panel forum_section_main_panel-middle'>
                     <div className='forum_main_middle-search'>
-                        <input id="createThread" placeholder='Create New Thread' />
+                        <input id="createThread" placeholder='创建新帖子' />
                         <SendIcon id="icon" />
                     </div>
                     <div className="forum_main_middle-threads">
@@ -51,6 +51,7 @@ const ForumPage = () => {
                     </div>
                 </div>
                 <div className='forum_section_main_panel forum_section_main_panel-right'>
+                    <input placeholder='麦加清真寺。。。'></input>
                     <div className="forum_main_right-interest">
                         <h5>最感兴趣的问题</h5>
                         <p>读书如交友，应求少而精 :)))</p>

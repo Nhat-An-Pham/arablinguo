@@ -76,6 +76,7 @@
             display: flex;
             align-items: center;
             border-radius: 13px;
+            height: 45px;
             overflow: hidden;
 
             & #createThread {
@@ -83,6 +84,7 @@
                 font-size: 15px;
                 padding: 12px 15px;
                 width: 95%;
+                height: 100%;
             }
 
             & #icon {
@@ -91,6 +93,7 @@
                 padding: 10px;
                 background-color: var(--base-color);
                 color: var(--lightgrey-color);
+                cursor: pointer;
             }
         }
 
@@ -219,10 +222,11 @@
     .forum_section-main {
         flex-direction: column;
         align-items: center;
+        width: 90%;
     }
 
     .forum_section_main_panel {
-        width: 80%;
+        width: 100%;
 
         & .forum_main_left-categories {
             display: none;
@@ -230,6 +234,19 @@
 
         &-middle {
             margin-bottom: 30px;
+        }
+
+
+        .forum_main_middle-search {
+            & #createThread {
+                width: 90%;
+            }
+
+            & #icon {
+                width: 10%;
+                height: 100%;
+                padding: 10px;
+            }
         }
     }
 

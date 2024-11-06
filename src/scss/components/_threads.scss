@@ -73,3 +73,13 @@
     }
 }
 
+@media only screen and (max-width: 800px) {
+
+    .thread_card_section{
+        &-body{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
